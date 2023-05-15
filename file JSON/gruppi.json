@@ -1,0 +1,20 @@
+[{"Grandi elettrodomestici":["frigoriferi", "congelatori", "condizionatori", "lavatrici", "lavastoviglie", "Informatica", "apparecchi di illuminazione", "dispositivi medici","Elettronica di consumo", "Telecomunicazioni", "TV Monitor a tubo catodico"],
+
+ "Piccoli elettrodomestici":["TV Monitor a tubo catodico", "Elettronica di consumo", "Telecomunicazioni", "Informatica","piccoli elettrodomestici", "elettroutensili", "giocattoli", "apparecchi di illuminazione", "dispositivi medici", "lampade fluorescenti", "sorgenti luminose compatte"],
+    
+ "Apparecchiature informatiche e per telecomunicazioni":["TV Monitor a tubo catodico", "Elettronica di consumo", "Telecomunicazioni", "Informatica", "piccoli elettrodomestici", "elettroutensili"],
+
+ "Apparecchiature di consumo e pannelli fotovoltaici":["frigoriferi", "congelatori", "condizionatori", "Elettronica di consumo", "Telecomunicazioni", "Informatica", "piccoli elettrodomestici", "elettroutensili", "giocattoli","apparecchi di illuminazione", "sorgenti luminose compatte"],
+
+ "Apparecchiature di illuminazione":["lampade fluorescenti", "sorgenti luminose compatte"],
+
+ "Utensili elettrici ed elettronici":["Elettronica di consumo", "Telecomunicazioni", "Informatica","piccoli elettrodomestici", "elettroutensili", "giocattoli"],
+
+ "Giocattoli e apparecchiature per il tempo libero e lo sport":["elettroutensili", "giocattoli", "apparecchi di illuminazione", "lampade fluorescenti" , "sorgenti luminose compatte"],
+
+ "Dispositivi medici":[],
+
+ "Strumenti di monitoraggio e di controllo":[],
+
+ "Distributori automatici":[]
+}]
