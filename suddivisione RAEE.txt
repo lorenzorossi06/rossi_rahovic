@@ -1,0 +1,37 @@
+grandi elettrodomestici R1 R2 R3 R4
+
+
+
+piccoli elettrodomestici R3 R4 R5 
+
+
+
+Apparecchiature informatiche e per telecomunicazioni R3 R4
+
+
+
+Apparecchiature di consumo e pannelli fotovoltaici R4
+
+
+
+Apparecchiature di illuminazione R5
+
+
+
+Utensili elettrici ed elettronici (ad eccezione degli utensili industriali fissi di grandi dimensioni) R1 R2 R4
+
+
+
+Giocattoli e apparecchiature per il tempo libero e lo sport R4
+
+
+
+Dispositivi medici (ad eccezione di tutti i prodotti impiantati ed infettati) R4
+
+
+
+Strumenti di monitoraggio e di controllo R4
+
+
+
+Distributori automatici R2 R4
