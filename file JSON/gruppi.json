@@ -1,20 +1,29 @@
-[{"Grandi elettrodomestici":["frigoriferi", "congelatori", "condizionatori", "lavatrici", "lavastoviglie", "Informatica", "apparecchi di illuminazione", "dispositivi medici","Elettronica di consumo", "Telecomunicazioni", "TV Monitor a tubo catodico"],
+[{"Grandi elettrodomestici":{"R1": ["frigoriferi", "congelatori", "condizionatori"], 
+                            "R2" : ["lavatrici", "lavastoviglie"], 
+                            "R3" : ["TV Monitor a tubo catodico"],
+                            "R4" : ["Informatica", "apparecchi di illuminazione", "dispositivi medici","Elettronica di consumo", "Telecomunicazioni"]
+                            },
 
- "Piccoli elettrodomestici":["TV Monitor a tubo catodico", "Elettronica di consumo", "Telecomunicazioni", "Informatica","piccoli elettrodomestici", "elettroutensili", "giocattoli", "apparecchi di illuminazione", "dispositivi medici", "lampade fluorescenti", "sorgenti luminose compatte"],
-    
- "Apparecchiature informatiche e per telecomunicazioni":["TV Monitor a tubo catodico", "Elettronica di consumo", "Telecomunicazioni", "Informatica", "piccoli elettrodomestici", "elettroutensili"],
+ "Piccoli elettrodomestici":{"R3": ["TV Monitor a tubo catodico"], 
+                            "R4" : ["Elettronica di consumo", "Telecomunicazioni", "Informatica","piccoli elettrodomestici", "apparecchi di illuminazione", "dispositivi medici"], 
+                            "R5" : ["lampade fluorescenti", "sorgenti luminose compatte"]},
 
- "Apparecchiature di consumo e pannelli fotovoltaici":["frigoriferi", "congelatori", "condizionatori", "Elettronica di consumo", "Telecomunicazioni", "Informatica", "piccoli elettrodomestici", "elettroutensili", "giocattoli","apparecchi di illuminazione", "sorgenti luminose compatte"],
+ "Apparecchiature informatiche e per telecomunicazioni":{"R3":["TV Monitor a tubo catodico"], 
+                                                        "R4" : ["Elettronica di consumo", "Telecomunicazioni", "Informatica", "piccoli elettrodomestici", "elettroutensili"]},
 
- "Apparecchiature di illuminazione":["lampade fluorescenti", "sorgenti luminose compatte"],
+ "Apparecchiature di consumo e pannelli fotovoltaici":{"R1": ["frigoriferi", "congelatori", "condizionatori"], 
+                                                        "R4": ["Elettronica di consumo", "Telecomunicazioni", "Informatica", "piccoli elettrodomestici", "elettroutensili", "giocattoli"],
+                                                        "R5": ["apparecchi di illuminazione", "sorgenti luminose compatte"]},
 
- "Utensili elettrici ed elettronici":["Elettronica di consumo", "Telecomunicazioni", "Informatica","piccoli elettrodomestici", "elettroutensili", "giocattoli"],
+ "Apparecchiature di illuminazione":{"R5": ["lampade fluorescenti", "sorgenti luminose compatte"]},
 
- "Giocattoli e apparecchiature per il tempo libero e lo sport":["elettroutensili", "giocattoli", "apparecchi di illuminazione", "lampade fluorescenti" , "sorgenti luminose compatte"],
+ "Utensili elettrici ed elettronici":{"R4": ["Elettronica di consumo", "Telecomunicazioni", "Informatica","piccoli elettrodomestici", "elettroutensili", "giocattoli"]},
 
- "Dispositivi medici":[],
+ "Giocattoli e apparecchiature per il tempo libero e lo sport":{"R4": ["giocattoli"]},
 
- "Strumenti di monitoraggio e di controllo":[],
+ "Dispositivi medici":{ "R4": ["dispositivi medici"]},
 
- "Distributori automatici":[]
+ "Strumenti di monitoraggio e di controllo":{"R4" : ["Elettronica di consumo", "Telecomunicazioni", "Informatica"]},
+
+ "Distributori automatici":{"R4" : ["elettronica di consumo", "Informatica"]}
 }]
