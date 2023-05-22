@@ -1,3 +1,4 @@
+const secondDiv = document.querySelector('.two')
 let data;
 let button;
 let Item = [];
@@ -36,8 +37,11 @@ function displayData() {
     for (let value of key){
       Item.push(value)
     }
-  } 
-  console.log(Item)
+  }
+  
+  Item.forEach(item => {
+    secondDiv.insertAdjacentHTML('beforeend',`<ul><li>${item}</li></ul>`)
+  }) 
 }
 
 readData().then(() => {
