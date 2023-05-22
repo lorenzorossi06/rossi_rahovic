@@ -1,28 +1,43 @@
+let data;
+let button;
+
 function assignButtonIds() {
-    const lis = document.querySelectorAll('.nav.one ul li');
-    for(let i = 0; i < lis.length; i++) {
-      const li = lis[i];
-      const id = `button-${i + 1}`;
-      li.setAttribute('id', id);
-    }
+  const lis = document.querySelectorAll('.nav.one ul li');
+  for (let i = 0; i < lis.length; i++) {
+    const li = lis[i];
+    const id = i;
+    li.setAttribute('id', id);
   }
-  
+}
+
 function addNavListener() {
   const lis = document.querySelectorAll('.nav.one ul li');
-  for(let i = 0; i < lis.length; i++) {
+  for (let i = 0; i < lis.length; i++) {
     const li = lis[i];
     li.addEventListener('click', function(event) {
-      console.log(event.target.id);
+      button = event.target.id;
+      console.log(button); 
     });
   }
 }
 
-fetch('file JSON/gruppi.json')
-  .then(response => response.json())
-  .then(data => {
-    // Utilizza l'oggetto JavaScript convertito da JSON
-    console.log(data);
-  });
+function readData() {
+  return fetch('file JSON/gruppi.json')
+    .then(response => response.json())
+    .then(result => {
+      data = result; 
+    });
+}
 
-assignButtonIds();
-addNavListener();
+function displayButton() {
+  console.log(button); 
+}
+
+readData().then(() => {
+  assignButtonIds();
+  addNavListener();
+  displayButton(); 
+  console.log(data)
+});
+
+
