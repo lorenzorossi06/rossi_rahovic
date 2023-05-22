@@ -1,6 +1,17 @@
+<<<<<<< Updated upstream
 let data;
 let button;
 let Item = [];
+=======
+
+const target = document.querySelectorAll("li")
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 function assignButtonIds() {
   const lis = document.querySelectorAll('.nav.one ul li');
@@ -46,3 +57,11 @@ readData().then(() => {
 });
 
 
+<<<<<<< Updated upstream
+=======
+assignButtonIds();
+addNavListener();
+
+
+
+>>>>>>> Stashed changes
