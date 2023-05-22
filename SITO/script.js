@@ -32,6 +32,7 @@ function readData() {
 }
 
 function displayData() {  
+  secondDiv.innerHTML = ''
   Item = []
   for (let key of Object.values(data[button])){
     for (let value of key){
