@@ -1,5 +1,6 @@
 let data;
 let button;
+let Item = [];
 
 function assignButtonIds() {
   const lis = document.querySelectorAll('.nav.one ul li');
@@ -16,7 +17,7 @@ function addNavListener() {
     const li = lis[i];
     li.addEventListener('click', function(event) {
       button = event.target.id;
-      console.log(button); 
+      displayData()
     });
   }
 }
@@ -29,15 +30,19 @@ function readData() {
     });
 }
 
-function displayButton() {
-  console.log(button); 
+function displayData() {  
+  Item = []
+  for (let key of Object.values(data[button])){
+    for (let value of key){
+      Item.push(value)
+    }
+  } 
+  console.log(Item)
 }
 
 readData().then(() => {
   assignButtonIds();
   addNavListener();
-  displayButton(); 
-  console.log(data)
 });
 
 
