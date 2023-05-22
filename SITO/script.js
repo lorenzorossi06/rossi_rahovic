@@ -7,15 +7,22 @@ function assignButtonIds() {
     }
   }
   
-  function addNavListener() {
-    const lis = document.querySelectorAll('.nav.one ul li');
-    for(let i = 0; i < lis.length; i++) {
-      const li = lis[i];
-      li.addEventListener('click', function(event) {
-        console.log(event.target.id);
-      });
-    }
+function addNavListener() {
+  const lis = document.querySelectorAll('.nav.one ul li');
+  for(let i = 0; i < lis.length; i++) {
+    const li = lis[i];
+    li.addEventListener('click', function(event) {
+      console.log(event.target.id);
+    });
   }
-  
-  assignButtonIds();
-  addNavListener();
+}
+
+fetch('file JSON/gruppi.json')
+  .then(response => response.json())
+  .then(data => {
+    // Utilizza l'oggetto JavaScript convertito da JSON
+    console.log(data);
+  });
+
+assignButtonIds();
+addNavListener();
