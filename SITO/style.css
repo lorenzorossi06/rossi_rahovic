@@ -65,6 +65,7 @@ header {
     font-size: 20px;
     border-radius: 10px;
     text-align: left;
+    user-select: none;
 }
 .one {
     left: 250px;
@@ -72,6 +73,7 @@ header {
 .two {
     right: 250px;
 }
+
 .active::before {
     content: "";
     position: absolute;

@@ -3,8 +3,8 @@ let data;
 let button;
 let Item = [];
 
-function assignButtonIds() {
-  const lis = document.querySelectorAll('.nav.one ul li');
+function assignButtonIds(tag) {
+  const lis = document.querySelectorAll(tag);
   for (let i = 0; i < lis.length; i++) {
     const li = lis[i];
     const id = i;
@@ -12,8 +12,8 @@ function assignButtonIds() {
   }
 }
 
-function addNavListener() {
-  const lis = document.querySelectorAll('.nav.one ul li');
+function addNavListener(tag) {
+  const lis = document.querySelectorAll(tag);
   for (let i = 0; i < lis.length; i++) {
     const li = lis[i];
     li.addEventListener('click', function(event) {
@@ -46,8 +46,11 @@ function displayData() {
 }
 
 readData().then(() => {
-  assignButtonIds();
-  addNavListener();
+  assignButtonIds('.nav.one > ul > li');
+  addNavListener('.nav.one > ul > li');
+
+  assignButtonIds('.nav.one > ul > li > i');
+  addNavListener('.nav.one > ul > li > i');
 });
 
 
