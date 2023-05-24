@@ -67,6 +67,7 @@ header {
     text-align: left;
     user-select: none;
 }
+
 .one {
     left: 250px;
 }
@@ -81,4 +82,11 @@ header {
     width: .5rem;
     background-color: var(--background-elem-hover);
     transition: all .2 ease;
+}
+
+.nav.one ul li{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-radius: 0;  
+    background-color: rgb(196, 192, 192);
 }

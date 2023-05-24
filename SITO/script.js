@@ -19,6 +19,8 @@ function addNavListener(tag) {
     li.addEventListener('click', function(event) {
       button = event.target.id;
       displayData()
+      const array = Array.from(lis);
+      selectObject(array)
     });
   }
 }
@@ -43,6 +45,20 @@ function displayData() {
   Item.forEach(item => {
     secondDiv.insertAdjacentHTML('beforeend',`<ul><li>${item}</li></ul>`)
   }) 
+}
+
+function selectObject(l_object){
+  function colorLi(object, background){
+    object.style.background = background;
+    }
+  
+  for(let i = 0; i < l_object.length; i++){
+    const li = document.querySelector(`li[id="${i}"`);
+    colorLi(li, 'white','gray', 'gray')
+  }
+
+  const li = document.querySelector(`li[id="${button}"`);
+  colorLi(li, 'gray','gray', 'gray')
 }
 
 readData().then(() => {
