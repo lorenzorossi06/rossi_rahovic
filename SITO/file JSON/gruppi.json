@@ -1,0 +1,110 @@
+[
+    {
+        "R1": [
+            "frigoriferi",
+            "congelatori",
+            "condizionatori"
+        ],
+        "R2": [
+            "lavatrici",
+            "lavastoviglie"
+        ],
+        "R3": [
+            "TV Monitor a tubo catodico"
+        ],
+        "R4": [
+            "Informatica",
+            "apparecchi di illuminazione",
+            "dispositivi medici",
+            "Elettronica di consumo",
+            "Telecomunicazioni"
+        ]
+    },
+    {
+        "R3": [
+            "TV Monitor a tubo catodico"
+        ],
+        "R4": [
+            "Elettronica di consumo",
+            "Telecomunicazioni",
+            "Informatica",
+            "piccoli elettrodomestici",
+            "apparecchi di illuminazione",
+            "dispositivi medici"
+        ],
+        "R5": [
+            "lampade fluorescenti",
+            "sorgenti luminose compatte"
+        ]
+    },
+    {
+        "R3": [
+            "TV Monitor a tubo catodico"
+        ],
+        "R4": [
+            "Elettronica di consumo",
+            "Telecomunicazioni",
+            "Informatica",
+            "piccoli elettrodomestici",
+            "elettroutensili"
+        ]
+    },
+    {
+        "R1": [
+            "frigoriferi",
+            "congelatori",
+            "condizionatori"
+        ],
+        "R4": [
+            "Elettronica di consumo",
+            "Telecomunicazioni",
+            "Informatica",
+            "piccoli elettrodomestici",
+            "elettroutensili",
+            "giocattoli"
+        ],
+        "R5": [
+            "apparecchi di illuminazione",
+            "sorgenti luminose compatte"
+        ]
+    },
+    {
+        "R5": [
+            "lampade fluorescenti",
+            "sorgenti luminose compatte"
+        ]
+    },
+    {
+        "R4": [
+            "Elettronica di consumo",
+            "Telecomunicazioni",
+            "Informatica",
+            "piccoli elettrodomestici",
+            "elettroutensili",
+            "giocattoli"
+        ]
+    },
+    {
+        "R4": [
+            "giocattoli"
+        ]
+    },
+    {
+        "R4": [
+            "dispositivi medici"
+        ]
+    },
+    {
+        "R4": [
+            "Elettronica di consumo",
+            "Telecomunicazioni",
+            "Informatica"
+        ]
+    },
+    {
+        "R4": [
+            "elettronica di consumo",
+            "Informatica"
+        ]
+    }
+]
