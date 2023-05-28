@@ -1,8 +1,9 @@
 const secondDiv = document.querySelector(".nav.two > ul");
 let data;
+let buttati;
 let button;
 let Item = [];
-let selezionato = { R: null, categoria: null, oggetto: null, nome: null };
+let selezionato = { "R": null, "categoria": null, "oggetto": null, "nome": null };
 
 const GRUPPI_APPARTENENZA = {
   R1: ["frigoriferi", "congelatori", "condizionatori"],
@@ -68,7 +69,7 @@ function addNavListener(tag, funzione) {
         console.log(selezionato);
 
       } else {
-        selezionato = {R: null, categoria: null, oggetto: null, nome: null};
+        selezionato = {"R": null, "categoria": null, "oggetto": null, "nome": null};
         selezionato["categoria"] = content;
         displayData();
       }
@@ -76,8 +77,8 @@ function addNavListener(tag, funzione) {
   }
 }
 
-function readData() {
-  return fetch("file JSON/gruppi.json")
+function readData(path) {
+  return fetch(path)
     .then((response) => response.json())
     .then((result) => {
       data = result;
@@ -97,9 +98,20 @@ function displayData() {
   });
 
   addNavListener(".nav.two > ul > li", 1);
-}
+};
 
-readData().then(() => {
+function saveItem(){
+  let chiavi = localStorage.getItem("chiavi")
+  chiavi = parseInt(chiavi);
+  localStorage.clear()
+  localStorage.setItem("chiavi", 0)
+
+  localStorage.setItem(chiavi, JSON.stringify(selezionato))
+};
+
+saveItem()
+
+readData("file JSON/gruppi.json").then(() => {
   assignButtonIds(".nav.one > ul > li");
   addNavListener(".nav.one > ul > li", 0);
 
