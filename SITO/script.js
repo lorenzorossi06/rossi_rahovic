@@ -1,4 +1,4 @@
-const secondDiv = document.querySelector('.two')
+const secondDiv = document.querySelector('.nav.two > ul')
 let data;
 let button;
 let Item = [];
@@ -49,24 +49,9 @@ function displayData() {
   }
   
   Item.forEach(item => {
-    secondDiv.insertAdjacentHTML('beforeend',`<ul><li>${item}</li></ul>`)
+    secondDiv.insertAdjacentHTML('beforeend',`<li>${item}</li>`)
   }) 
 }
-
-// function selectObject(l_object){
-//   function colorLi(object, background){
-//     object.style.background = background;
-//     }
-  
-//   for(let i = 0; i < l_object.length; i++){
-//     const li = document.querySelector(`li[id="${i}"`);
-//     colorLi(li, 'white','gray', 'gray')
-//   }
-
-//   const li = document.querySelector(`li[id="${button}"`);
-//   colorLi(li, 'gray','gray', 'gray')
-// }
-
 
 readData().then(() => {
   assignButtonIds('.nav.one > ul > li');
