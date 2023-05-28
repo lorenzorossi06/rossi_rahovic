@@ -1,110 +1,67 @@
 [
-    {
-        "R1": [
-            "frigoriferi",
-            "congelatori",
-            "condizionatori"
-        ],
-        "R2": [
-            "lavatrici",
-            "lavastoviglie"
-        ],
-        "R3": [
-            "TV Monitor a tubo catodico"
-        ],
-        "R4": [
-            "Informatica",
-            "apparecchi di illuminazione",
-            "dispositivi medici",
-            "Elettronica di consumo",
-            "Telecomunicazioni"
-        ]
-    },
-    {
-        "R3": [
-            "TV Monitor a tubo catodico"
-        ],
-        "R4": [
-            "Elettronica di consumo",
-            "Telecomunicazioni",
-            "Informatica",
-            "piccoli elettrodomestici",
-            "apparecchi di illuminazione",
-            "dispositivi medici"
-        ],
-        "R5": [
-            "lampade fluorescenti",
-            "sorgenti luminose compatte"
-        ]
-    },
-    {
-        "R3": [
-            "TV Monitor a tubo catodico"
-        ],
-        "R4": [
-            "Elettronica di consumo",
-            "Telecomunicazioni",
-            "Informatica",
-            "piccoli elettrodomestici",
-            "elettroutensili"
-        ]
-    },
-    {
-        "R1": [
-            "frigoriferi",
-            "congelatori",
-            "condizionatori"
-        ],
-        "R4": [
-            "Elettronica di consumo",
-            "Telecomunicazioni",
-            "Informatica",
-            "piccoli elettrodomestici",
-            "elettroutensili",
-            "giocattoli"
-        ],
-        "R5": [
-            "apparecchi di illuminazione",
-            "sorgenti luminose compatte"
-        ]
-    },
-    {
-        "R5": [
-            "lampade fluorescenti",
-            "sorgenti luminose compatte"
-        ]
-    },
-    {
-        "R4": [
-            "Elettronica di consumo",
-            "Telecomunicazioni",
-            "Informatica",
-            "piccoli elettrodomestici",
-            "elettroutensili",
-            "giocattoli"
-        ]
-    },
-    {
-        "R4": [
-            "giocattoli"
-        ]
-    },
-    {
-        "R4": [
-            "dispositivi medici"
-        ]
-    },
-    {
-        "R4": [
-            "Elettronica di consumo",
-            "Telecomunicazioni",
-            "Informatica"
-        ]
-    },
-    {
-        "R4": [
-            "elettronica di consumo",
-            "Informatica"
-        ]
-    }
+  [
+    "frigoriferi",
+    "congelatori",
+    "condizionatori",
+    "lavatrici",
+    "lavastoviglie",
+    "TV Monitor a tubo catodico",
+    "Informatica",
+    "apparecchi di illuminazione",
+    "dispositivi medici",
+    "Elettronica di consumo",
+    "Telecomunicazioni"
+  ],
+
+  [
+    "TV Monitor a tubo catodico",
+    "Elettronica di consumo",
+    "Telecomunicazioni",
+    "Informatica",
+    "piccoli elettrodomestici",
+    "apparecchi di illuminazione",
+    "dispositivi medici",
+    "lampade fluorescenti",
+    "sorgenti luminose compatte"
+  ],
+  [
+    "TV Monitor a tubo catodico",
+    "Elettronica di consumo",
+    "Telecomunicazioni",
+    "Informatica",
+    "piccoli elettrodomestici",
+    "elettroutensili"
+  ],
+  [
+    "frigoriferi",
+    "congelatori",
+    "condizionatori",
+    "Elettronica di consumo",
+    "Telecomunicazioni",
+    "Informatica",
+    "piccoli elettrodomestici",
+    "elettroutensili",
+    "giocattoli",
+    "apparecchi di illuminazione",
+    "sorgenti luminose compatte"
+  ],
+
+  ["lampade fluorescenti", "sorgenti luminose compatte"],
+
+  [
+    "Elettronica di consumo",
+    "Telecomunicazioni",
+    "Informatica",
+    "piccoli elettrodomestici",
+    "elettroutensili",
+    "giocattoli"
+  ],
+
+  ["giocattoli"],
+
+  ["dispositivi medici"],
+
+  ["Elettronica di consumo", "Telecomunicazioni", "Informatica"],
+
+  ["elettronica di consumo", "Informatica"]
 ]
