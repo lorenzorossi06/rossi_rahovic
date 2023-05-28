@@ -65,7 +65,7 @@ function addNavListener(tag, funzione) {
         let r = getR(content)
         selezionato["oggetto"] = content;
         selezionato["R"] = r
-        console.log(selezionato);
+        // console.log(selezionato);
 
       } else {
         selezionato = {R: null, categoria: null, oggetto: null, nome: null};
@@ -106,3 +106,35 @@ readData().then(() => {
   assignButtonIds(".nav.one > ul > li > i");
   addNavListener(".nav.one > ul > li > i", 0);
 });
+
+// gestione pulsanti
+
+const lista= document.querySelectorAll("li")
+const pulsante = document.querySelector("button")
+const nomeProd = document.querySelector(".desc").value
+
+let elementiAttivi = []
+
+function attivi(elems, attivi) {
+  attivi = []
+  console.log(attivi)
+  elems.forEach(elem => {
+    if (elem.classList.contains("active")) {
+      attivi.push(elem)
+    }
+  })
+  console.log(attivi)
+  if (attivi.length != 2) {
+    return false
+  } else {
+    return true
+  }
+}
+  document.addEventListener("click", () => {
+    let esito=attivi(lista, elementiAttivi)
+    console.log(esito)
+  })
+
+if (nomeProd != "") {
+  pulsante.style.backgroundColor = "green"
+}
