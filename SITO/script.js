@@ -12,15 +12,21 @@ function assignButtonIds(tag) {
   }
 }
 
+function addActive(lis, clicked) {
+  lis.forEach(li=>{
+    li.classList.remove("active")
+  })
+  clicked.classList.add("active")
+}
+
 function addNavListener(tag) {
   const lis = document.querySelectorAll(tag);
   for (let i = 0; i < lis.length; i++) {
     const li = lis[i];
     li.addEventListener('click', function(event) {
+      addActive(lis,li)      
       button = event.target.id;
       displayData()
-      const array = Array.from(lis);
-      selectObject(array)
     });
   }
 }
@@ -47,19 +53,20 @@ function displayData() {
   }) 
 }
 
-function selectObject(l_object){
-  function colorLi(object, background){
-    object.style.background = background;
-    }
+// function selectObject(l_object){
+//   function colorLi(object, background){
+//     object.style.background = background;
+//     }
   
-  for(let i = 0; i < l_object.length; i++){
-    const li = document.querySelector(`li[id="${i}"`);
-    colorLi(li, 'white','gray', 'gray')
-  }
+//   for(let i = 0; i < l_object.length; i++){
+//     const li = document.querySelector(`li[id="${i}"`);
+//     colorLi(li, 'white','gray', 'gray')
+//   }
 
-  const li = document.querySelector(`li[id="${button}"`);
-  colorLi(li, 'gray','gray', 'gray')
-}
+//   const li = document.querySelector(`li[id="${button}"`);
+//   colorLi(li, 'gray','gray', 'gray')
+// }
+
 
 readData().then(() => {
   assignButtonIds('.nav.one > ul > li');
