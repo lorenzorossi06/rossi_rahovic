@@ -19,14 +19,23 @@ function addActive(lis, clicked) {
   clicked.classList.add("active")
 }
 
-function addNavListener(tag) {
+function addNavListener(tag, funzione) {
   const lis = document.querySelectorAll(tag);
   for (let i = 0; i < lis.length; i++) {
     const li = lis[i];
     li.addEventListener('click', function(event) {
       addActive(lis,li)      
       button = event.target.id;
-      displayData()
+
+      if (funzione == 1){
+        const content = event.target.textContent
+        console.log(content)
+      }
+
+      else{
+        displayData()  
+      };
+
     });
   }
 }
@@ -51,14 +60,16 @@ function displayData() {
   Item.forEach(item => {
     secondDiv.insertAdjacentHTML('beforeend',`<li>${item}</li>`)
   }) 
+
+  addNavListener('.nav.two > ul > li', 1)
 }
 
 readData().then(() => {
   assignButtonIds('.nav.one > ul > li');
-  addNavListener('.nav.one > ul > li');
+  addNavListener('.nav.one > ul > li', 0);
 
   assignButtonIds('.nav.one > ul > li > i');
-  addNavListener('.nav.one > ul > li > i');
+  addNavListener('.nav.one > ul > li > i', 0);
 });
 
 
