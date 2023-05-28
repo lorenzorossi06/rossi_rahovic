@@ -2,6 +2,9 @@ const secondDiv = document.querySelector('.nav.two > ul')
 let data;
 let button;
 let Item = [];
+let selezionato = { "R" : null,
+                  "oggetto": null,
+                  "nome": null}
 
 function assignButtonIds(tag) {
   const lis = document.querySelectorAll(tag);
@@ -26,13 +29,18 @@ function addNavListener(tag, funzione) {
     li.addEventListener('click', function(event) {
       addActive(lis,li)      
       button = event.target.id;
+      let content = event.target.textContent.trim();
 
       if (funzione == 1){
-        const content = event.target.textContent
-        console.log(content)
+        selezionato["oggetto"] = content
+        console.log(selezionato)
       }
 
       else{
+        selezionato = { "R" : null,
+                  "oggetto": null,
+                  "nome": null}
+        selezionato["R"] = content
         displayData()  
       };
 
