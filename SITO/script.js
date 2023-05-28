@@ -1,8 +1,28 @@
-const secondDiv = document.querySelector(".nav.two > ul");
 let data;
 let button;
 let Item = [];
 let selezionato = { R: null, oggetto: null, nome: null };
+
+const GRUPPI_APPARTENENZA = {
+  R1: ["frigoriferi", "congelatori", "condizionatori"],
+
+  R2: ["lavatrici", "lavastoviglie"],
+
+  R3: ["TV Monitor a tubo catodico"],
+
+  R4: [
+    "Elettronica di consumo",
+    "Telecomunicazioni",
+    "Informatica",
+    "piccoli elettrodomestici",
+    "elettroutensili",
+    "giocattoli",
+    "apparecchi di illuminazione",
+    "dispositivi medici",
+  ],
+
+  R5: ["lampade fluorescenti", "sorgenti luminose compatte"],
+};
 
 function assignButtonIds(tag) {
   const lis = document.querySelectorAll(tag);
@@ -25,6 +45,7 @@ function addNavListener(tag, funzione) {
   for (let i = 0; i < lis.length; i++) {
     const li = lis[i];
     li.addEventListener("click", function (event) {
+
       addActive(lis, li);
       button = event.target.id;
       let content = event.target.textContent.trim();
@@ -52,6 +73,7 @@ function readData() {
 function displayData() {
   secondDiv.innerHTML = "";
   Item = [];
+
   for (let value of Object.values(data[button])) {
     Item.push(value);
   }
@@ -65,6 +87,8 @@ function displayData() {
 
 readData().then(() => {
   assignButtonIds(".nav.one > ul > li");
+
+=======
   addNavListener(".nav.one > ul > li", 0);
 
   assignButtonIds(".nav.one > ul > li > i");
