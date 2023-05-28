@@ -87,8 +87,6 @@ function displayData() {
 
 readData().then(() => {
   assignButtonIds(".nav.one > ul > li");
-
-=======
   addNavListener(".nav.one > ul > li", 0);
 
   assignButtonIds(".nav.one > ul > li > i");
