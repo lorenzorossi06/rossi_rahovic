@@ -1,7 +1,8 @@
+const secondDiv = document.querySelector(".nav.two > ul");
 let data;
 let button;
 let Item = [];
-let selezionato = { R: null, oggetto: null, nome: null };
+let selezionato = { R: null, categoria: null, oggetto: null, nome: null };
 
 const GRUPPI_APPARTENENZA = {
   R1: ["frigoriferi", "congelatori", "condizionatori"],
@@ -40,6 +41,16 @@ function addActive(lis, clicked) {
   clicked.classList.add("active");
 }
 
+function getR(object){
+  for (let r of Object.keys(GRUPPI_APPARTENENZA)){
+    for (let o of GRUPPI_APPARTENENZA[r]){
+      if (object == o){
+        return r
+      }
+    }
+  }
+}
+
 function addNavListener(tag, funzione) {
   const lis = document.querySelectorAll(tag);
   for (let i = 0; i < lis.length; i++) {
@@ -51,11 +62,14 @@ function addNavListener(tag, funzione) {
       let content = event.target.textContent.trim();
 
       if (funzione == 1) {
+        let r = getR(content)
         selezionato["oggetto"] = content;
+        selezionato["R"] = r
         console.log(selezionato);
+
       } else {
-        selezionato = { R: null, oggetto: null, nome: null };
-        selezionato["R"] = content;
+        selezionato = {R: null, categoria: null, oggetto: null, nome: null};
+        selezionato["categoria"] = content;
         displayData();
       }
     });
