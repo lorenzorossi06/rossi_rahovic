@@ -1,14 +1,14 @@
 [
   [
-    "frigoriferi",
-    "congelatori",
-    "condizionatori",
-    "lavatrici",
-    "lavastoviglie",
+    "Frigoriferi",
+    "Congelatori",
+    "Condizionatori",
+    "Lavatrici",
+    "Lavastoviglie",
     "TV Monitor a tubo catodico",
     "Informatica",
-    "apparecchi di illuminazione",
-    "dispositivi medici",
+    "Apparecchi di illuminazione",
+    "Dispositivi medici",
     "Elettronica di consumo",
     "Telecomunicazioni"
   ],
@@ -18,50 +18,50 @@
     "Elettronica di consumo",
     "Telecomunicazioni",
     "Informatica",
-    "piccoli elettrodomestici",
-    "apparecchi di illuminazione",
-    "dispositivi medici",
-    "lampade fluorescenti",
-    "sorgenti luminose compatte"
+    "Piccoli elettrodomestici",
+    "Apparecchi di illuminazione",
+    "Dispositivi medici",
+    "Lampade fluorescenti",
+    "Sorgenti luminose compatte"
   ],
   [
     "TV Monitor a tubo catodico",
     "Elettronica di consumo",
     "Telecomunicazioni",
     "Informatica",
-    "piccoli elettrodomestici",
-    "elettroutensili"
+    "Piccoli elettrodomestici",
+    "Elettroutensili"
   ],
   [
-    "frigoriferi",
-    "congelatori",
-    "condizionatori",
+    "Frigoriferi",
+    "Congelatori",
+    "Condizionatori",
     "Elettronica di consumo",
     "Telecomunicazioni",
     "Informatica",
-    "piccoli elettrodomestici",
-    "elettroutensili",
-    "giocattoli",
-    "apparecchi di illuminazione",
-    "sorgenti luminose compatte"
+    "Piccoli elettrodomestici",
+    "Elettroutensili",
+    "Giocattoli",
+    "Apparecchi di illuminazione",
+    "Sorgenti luminose compatte"
   ],
 
-  ["lampade fluorescenti", "sorgenti luminose compatte"],
+  ["Lampade fluorescenti", "Sorgenti luminose compatte"],
 
   [
     "Elettronica di consumo",
     "Telecomunicazioni",
     "Informatica",
-    "piccoli elettrodomestici",
-    "elettroutensili",
-    "giocattoli"
+    "Piccoli elettrodomestici",
+    "Elettroutensili",
+    "Giocattoli"
   ],
 
-  ["giocattoli"],
+  ["Giocattoli"],
 
-  ["dispositivi medici"],
+  ["Dispositivi medici"],
 
   ["Elettronica di consumo", "Telecomunicazioni", "Informatica"],
 
-  ["elettronica di consumo", "Informatica"]
+  ["Elettronica di consumo", "Informatica"]
 ]
