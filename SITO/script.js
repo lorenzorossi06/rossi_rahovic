@@ -68,12 +68,12 @@ function addNavListener(tag, funzione) {
         let r = getR(content)
         selezionato["oggetto"] = content;
         selezionato["R"] = r
-        nav2.style.color = 'black';
+        nav2.style.color = 'white';
         
       } else {
         selezionato = {R: null, categoria: null, oggetto: null, nome: null};
         selezionato["categoria"] = content;
-        nav1.style.color = 'black';
+        nav1.style.color = 'white';
         displayData();
       }
     });
