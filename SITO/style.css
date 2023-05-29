@@ -10,6 +10,7 @@
   --background-lista: rgb(209, 209, 209);
   --background-elem-hover: rgb(255, 255, 255);
   --header: rgb(153, 153, 153);
+  --pulsanti:rgb(68,68,68)
 }
 
 
@@ -135,4 +136,63 @@ button {
   cursor: pointer;
   padding: 10px;
   font-weight: bold;
+}
+
+/* TABELLA */
+
+.container {
+  width: 50%;
+  height: 600px;
+  overflow-y: scroll;
+  margin-top: 15vh;
+}
+
+.table {
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+  background-color: var(--background-lista);
+  overflow-y: overlay;
+  border-collapse: collapse;
+}
+tr {
+  width: 100%;
+}
+
+th {
+  color: whitesmoke;
+  background-color: var(--pulsanti);
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+td {
+  height: 50px;
+}
+
+.pulsanti {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: auto;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: var(--pulsanti);
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+
+a:hover {
+  background-color: var(--background-elem-hover);
+  color: var(--pulsanti);
+  font-weight: bold;
+  transition: all .3s ease;
 }
