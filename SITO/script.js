@@ -48,7 +48,6 @@ function getR(object){
   for (let r of Object.keys(GRUPPI_APPARTENENZA)){
     for (let o of GRUPPI_APPARTENENZA[r]){
       if (object == o){
-        console.log(r)
         return r
       }
     }
@@ -107,9 +106,29 @@ function displayData() {
 function saveItem(selezionato){
   let chiavi = localStorage.getItem("chiavi")
   chiavi = parseInt(chiavi);
-  localStorage.setItem("chiavi", chiavi + 1)
+  
+  if (isNaN(chiavi)) {
+    console.log(chiavi)
+    localStorage.clear()
+    localStorage.setItem("chiavi", 0)
+    chiavi = localStorage.getItem("chiavi")
+    console.log(chiavi)
+  }
 
+  else if (typeof chiavi!= 'number'){
+    console.log(chiavi)
+    localStorage.clear()
+    localStorage.setItem("chiavi", 0)
+    chiavi = localStorage.getItem("chiavi")
+    console.log(chiavi)
+  }
+  
+
+
+  chiavi = parseInt(chiavi);
+  localStorage.setItem("chiavi", chiavi + 1)
   localStorage.setItem(chiavi, JSON.stringify(selezionato))
+  // localStorage.clear(  )
 };
 
 const submit = document.querySelector('button');
@@ -124,8 +143,7 @@ submit.addEventListener('click', function() {
   
   else if(selezionato["oggetto"] != null && selezionato["R"] != null && selezionato["categoria"] != null){
     selezionato["nome"] = nome
-    // saveItem(selezionato)
-    console.log(selezionato)
+    saveItem(selezionato)
     selezionato = { "R": null, "categoria": null, "oggetto": null, "nome": null };
     input.value = null
     submit.style.backgroundColor = 'rgb(4, 255, 4)'
