@@ -104,6 +104,14 @@ function displayData() {
   addNavListener(".nav.two > ul > li", 1);
 }
 
+function saveItem(selezionato){
+  let chiavi = localStorage.getItem("chiavi")
+  chiavi = parseInt(chiavi);
+  localStorage.setItem("chiavi", chiavi + 1)
+
+  localStorage.setItem(chiavi, JSON.stringify(selezionato))
+};
+
 const submit = document.querySelector('button');
 const input = document.querySelector('input');
 
@@ -112,23 +120,39 @@ submit.addEventListener('click', function() {
   nome = nome.trim()
   if (nome == "" || nome == null){
     submit.style.backgroundColor = "red"
-  } else{
-    submit.style.backgroundColor = "rgb(4, 255, 4)"
+  }
+  
+  else if(selezionato["oggetto"] != null && selezionato["R"] != null && selezionato["categoria"] != null){
+    selezionato["nome"] = nome
+    // saveItem(selezionato)
+    console.log(selezionato)
+    selezionato = { "R": null, "categoria": null, "oggetto": null, "nome": null };
+    input.value = null
+    submit.style.backgroundColor = 'rgb(4, 255, 4)'
+
+    const lis1  = document.querySelectorAll(".nav.one > ul > li");
+    lis1.forEach((li) => {
+      li.classList.remove("active");
+    });
+
+    const lis2  = document.querySelectorAll(".nav.two > ul > li");
+    lis2.forEach((li) => {
+      li.classList.remove("active");
+    });
   }
 
-  if( selezionato["categoria"] == null){
+  else if( selezionato["categoria"] == null){
     nav1.style.color = 'red';
   }
 
-  if (selezionato["oggetto"] == null){
+  else if (selezionato["oggetto"] == null){
     nav2.style.color = 'red';
   }
 
-  else{
-    selezionato["nome"] = nome
-    console.log(selezionato)
-    selezionato = { "R": null, "categoria": null, "oggetto": null, "nome": null };
+  if (nome != "" && nome != null){
+    submit.style.backgroundColor = "rgb(4, 255, 4)"
   }
+  
 });
 
 readData().then(() => {
